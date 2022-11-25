@@ -1,0 +1,53 @@
+VERSION 0.0.0
+
+-----
+
+WORKING ON-
+
+    -x 0.0.1- compile a list of relavant shader language functions
+
+NEEDED-
+
+-----
+
+x- c++ generate file with random shader language functions
+
+    x- compile a list of relavant functions
+        x- measure speed (?)
+    x- generate random function given weight and bias
+    x- write into a file
+
+-----
+
+x- c++ create file type for changing the generator neural network
+
+    x- get state of the network
+        x- make that work with edge cases
+    x- write state out in file
+
+-----
+
+x- c++ method of measuring distance to poly mesh given 3d point
+
+    x- get point distance to tri
+        x- figure out negative values
+        x- test edge cases
+    x- repeat over small distance in AABB volume
+        x- no volume, full volume, disconnected surfaces
+    x- make into compute shader (?)
+
+-----
+
+x- python compare the difference between generator output and tri mesh
+
+    x- loop through the volume of the AABB, get distance from both sdf's
+    x- alter neural network, optimizing for smallest difference
+        x- learn methods for regressing nn
+
+-----
+
+x- parser from neural net file type to shader code
+
+-----
+
+GOAL- pipeline for converting input poly meshes into signed distance functions
